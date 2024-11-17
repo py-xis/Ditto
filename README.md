@@ -1,4 +1,4 @@
-Ditto
+# Ditto
 
 Ditto is a self-hosted, real-time clipboard synchronization tool powered by Firebase Firestore. It enables seamless clipboard sharing between multiple devices securely and efficiently. Ditto ensures that your clipboard is always in sync across all your devices without relying on third-party servers for hosting.
 
