@@ -73,19 +73,19 @@ Usage
 	2.	Ditto will automatically add the current device to Firestore.
 	3.	Clipboard changes will sync in real-time between all devices using the same username.
 
-Project Structure
-
-Ditto/
-│
-├── clipboard.py         # Clipboard management (singleton implementation)
-├── database.py          # Database interaction with Firebase Firestore
-├── Encryption.py        # AES-256 encryption and decryption
-├── uploader.py          # Monitors clipboard changes and uploads data
-├── listener.py          # Listens for clipboard changes from Firestore
-├── startScript.py       # Entry point to start the app
-├── requirements.txt     # Python dependencies
-├── firestore.json       # Firebase service account key file (add this manually)
-└── README.md            # Project documentation
+	Project Structure
+	
+	Ditto/
+	│
+	├── clipboard.py         # Clipboard management (singleton implementation)
+	├── database.py          # Database interaction with Firebase Firestore
+	├── Encryption.py        # AES-256 encryption and decryption
+	├── uploader.py          # Monitors clipboard changes and uploads data
+	├── listener.py          # Listens for clipboard changes from Firestore
+	├── startScript.py       # Entry point to start the app
+	├── requirements.txt     # Python dependencies
+	├── firestore.json       # Firebase service account key file (add this manually)
+	└── README.md            # Project documentation
 
 Key Features of the Code
 
