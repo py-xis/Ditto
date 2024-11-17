@@ -4,24 +4,24 @@ Ditto is a self-hosted, real-time clipboard synchronization tool powered by Fire
 
 Features
 
-🔄 Real-Time Clipboard Sync: Automatically synchronize clipboard content across multiple devices.
-🔐 End-to-End Encryption: Your clipboard content is encrypted using AES-256 for ultimate privacy and security.
-📂 Self-Hosted: Leverage Firebase Firestore to host and manage your clipboard data.
-⚡ Cross-Platform: Works across any devices that can run Python and support Firebase.
-🛠️ Lightweight: Minimal resource usage with no bloatware.
+	•	🔄 Real-Time Clipboard Sync: Automatically synchronize clipboard content across multiple devices.
+	•	🔐 End-to-End Encryption: Your clipboard content is encrypted using AES-256 for ultimate privacy and security.
+	•	📂 Self-Hosted: Leverage Firebase Firestore to host and manage your clipboard data.
+	•	⚡ Cross-Platform: Works across any devices that can run Python and support Firebase.
+	•	🛠️ Lightweight: Minimal resource usage with no bloatware.
 
 How It Works
 
-Each device runs Ditto as a self-hosted Python application.
-Clipboard changes are detected and uploaded to Firebase Firestore after encryption.
-Other devices retrieve the encrypted data, decrypt it, and update their local clipboard in real time.
-Only authenticated devices can participate in the synchronization.
+	1.	Each device runs Ditto as a self-hosted Python application.
+	2.	Clipboard changes are detected and uploaded to Firebase Firestore after encryption.
+	3.	Other devices retrieve the encrypted data, decrypt it, and update their local clipboard in real time.
+	4.	Only authenticated devices can participate in the synchronization.
 
 Requirements
 
-Python 3.9+ installed on all devices.
-Firebase Firestore account.
-A valid firestore.json service account key file downloaded from the Firebase Console.
+	1.	Python 3.9+ installed on all devices.
+	2.	Firebase Firestore account.
+	3.	A valid firestore.json service account key file downloaded from the Firebase Console.
 
 Installation
 
@@ -40,12 +40,12 @@ pip install -r requirements.txt
 
 Step 3: Set Up Firebase Firestore
 
-Create a Firebase project in the Firebase Console.
-Enable Firestore Database in the project.
-Download the firestore.json file:
-Go to Project Settings > Service Accounts.
-Click Generate New Private Key and download the firestore.json file.
-Save the firestore.json file in the Ditto project directory.
+	1.	Create a Firebase project in the Firebase Console.
+	2.	Enable Firestore Database in the project.
+	3.	Download the firestore.json file:
+	•	Go to Project Settings > Service Accounts.
+	•	Click Generate New Private Key and download the firestore.json file.
+	•	Save the firestore.json file in the Ditto project directory.
 
 Step 4: Configure Firestore Rules
 
@@ -68,10 +68,10 @@ python startScript.py
 
 Usage
 
-On the first run, you’ll be asked to enter a unique username.
-This username will be used to group your devices for synchronization.
-Ditto will automatically add the current device to Firestore.
-Clipboard changes will sync in real-time between all devices using the same username.
+	1.	On the first run, you’ll be asked to enter a unique username.
+	•	This username will be used to group your devices for synchronization.
+	2.	Ditto will automatically add the current device to Firestore.
+	3.	Clipboard changes will sync in real-time between all devices using the same username.
 
 Project Structure
 
@@ -89,16 +89,16 @@ Ditto/
 
 Key Features of the Code
 
-Clipboard Manager:
+	1.	Clipboard Manager:
 	•	Manages local clipboard access using the Clipboard class.
 	•	Implements the Singleton pattern to ensure only one instance per process.
-Encryption:
+	2.	Encryption:
 	•	Encrypts and decrypts clipboard content with AES-256 for security.
 	•	Prevents unauthorized access to clipboard data.
-Firebase Integration:
+	3.	Firebase Integration:
 	•	Synchronizes clipboard content between devices using Firestore.
 	•	Automatically adds new devices to the user group.
-Real-Time Updates:
+	4.	Real-Time Updates:
 	•	The Listener monitors Firestore for changes and updates the clipboard.
 	•	The Uploader detects local clipboard changes and uploads them to Firestore.
 
