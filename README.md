@@ -27,8 +27,8 @@ Ditto is a self-hosted, real-time clipboard synchronization tool powered by Fire
 
 Step 1: Clone the Repository
 
-git clone https://github.com/py-xis/Ditto.git
-cd Ditto
+- git clone https://github.com/py-xis/Ditto.git
+- cd Ditto
 
 Step 2 : Ensure that you have the firebase config json file in the project's root directory. The directory must look like this with the firebase config json file.
 
@@ -41,13 +41,13 @@ Step 2: Install Dependencies
 
 Install the required Python libraries:
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
-Note the following,
-This project uses the pyperclip module. 
-If you are on windows, then you require no additional modules.
-If you are on macOS, you need pbcopy and pbpaste commands, which should come with the os.
-If you are on Linux, then pyperclip module makes use of the xclip or xsel commands, which should come with the os. Otherwise run “sudo apt-get install xclip” or “sudo apt-get install xsel” (Note: xsel does not always seem to work.)
+- Note the following,
+- This project uses the pyperclip module. 
+- If you are on windows, then you require no additional modules.
+- If you are on macOS, you need pbcopy and pbpaste commands, which should come with the os.
+- If you are on Linux, then pyperclip module makes use of the xclip or xsel commands, which should come with the os. Otherwise run “sudo apt-get install xclip” or “sudo apt-get install xsel” (Note: xsel does not always seem to work.)
 
 Step 3: Set Up Firebase Firestore
 **(Not needed if, you already have a firebase config file)**
