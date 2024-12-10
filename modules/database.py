@@ -42,7 +42,7 @@ class Firebase(Database):
         if not hasattr(self, "initialized"):  # Avoid reinitialization in singleton
             self.initialized = True
             # Initialize Firebase admin SDK
-            cred = credentials.Certificate("modules/ditto-2d5d7-048bb291517e.json")
+            cred = credentials.Certificate("modules/ditto-2d5d7-4124007c9c4f.json")
             initialize_app(cred)
             self.db = firestore.client()
             self.encryption = AES256Encryption()  # Instance of AES256Encryption
