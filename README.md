@@ -14,7 +14,6 @@ Ditto is a real-time clipboard synchronization tool powered by Firebase Firestor
 - Run Ditto on each device as a self-hosted Python application.
 - Clipboard changes are encrypted and uploaded to Firebase Firestore.
 - Other devices retrieve the encrypted data, decrypt it, and update their local clipboard in real time.
-- Only authenticated devices can participate in the synchronization.
 
 ## 📋 Requirements
 
