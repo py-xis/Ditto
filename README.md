@@ -30,14 +30,27 @@ Step 1: Clone the Repository
 git clone https://github.com/py-xis/Ditto.git
 cd Ditto
 
+Step 2 : Ensure that you have the firebase config json file in the project's root directory. The directory must look like this with the firebase config json file.
+
+
+<img width="521" alt="Screenshot 2024-12-10 at 6 43 00 PM" src="https://github.com/user-attachments/assets/ccfda95c-f90e-4272-a1c9-50476c066222">
+<img width="951" alt="Screenshot 2024-12-10 at 6 43 18 PM" src="https://github.com/user-attachments/assets/9b62f803-79c7-4ce8-aa11-f7064e96e064">
+
+
 Step 2: Install Dependencies
 
 Install the required Python libraries:
 
 pip install -r requirements.txt
 
-Step 3: Set Up Firebase Firestore
+Note the following,
+This project uses the pyperclip module. 
+If you are on windows, then you require no additional modules.
+If you are on macOS, you need pbcopy and pbpaste commands, which should come with the os.
+If you are on Linux, then pyperclip module makes use of the xclip or xsel commands, which should come with the os. Otherwise run “sudo apt-get install xclip” or “sudo apt-get install xsel” (Note: xsel does not always seem to work.)
 
+Step 3: Set Up Firebase Firestore
+**(Not needed if, you already have a firebase config file)**
 1. Create a Firebase project in the Firebase Console.
 2. Enable the Firestore Database in the project.
 3. Download the firestore.json file:
@@ -46,6 +59,7 @@ Step 3: Set Up Firebase Firestore
 	•	Save the firestore.json file in the Ditto project directory.
 
 Step 4: Configure Firestore Rules
+**(Not needed if, you already have a firebase config file)**
 
 Step 5: Run Ditto
 
