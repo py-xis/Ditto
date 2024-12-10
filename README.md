@@ -21,6 +21,15 @@ Ditto is a real-time clipboard synchronization tool powered by Firebase Firestor
 - Firebase Firestore account.
 - A valid firestore.json service account key file downloaded from the Firebase Console.
 
+
+## Directory Structure.
+- modules : Holds all the essential modules for the app
+- tests : Holds all the unittests for the modules.
+- startScript.py : The main script to start the app.
+- README.md : Instructions to run the code.
+- firebase config json file : Configuration file required to connect to firebase.
+- requirements.txt : Dependencies for the project.
+
 ## ⚙️ Installation
 
 ## Step 1: Clone the Repository
