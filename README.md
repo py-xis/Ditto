@@ -59,9 +59,9 @@ pip install -r requirements.txt
 1. Create a Firebase project in the Firebase Console.
 2. Enable the Firestore Database in the project.
 3. Download the firestore.json file:
-	•	Go to Project Settings > Service Accounts.
-	•	Click Generate New Private Key and download the file.
-	•	Save the firestore.json file in the Ditto project directory.
+   - Go to Project Settings > Service Accounts.
+   - Click Generate New Private Key and download the file.
+   - Save the firestore.json file in the Ditto project directory.
 
 ### Step 4: Configure Firestore Rules
 **(Not needed if, you already have a firebase config file)**
